@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại Học Công Nghiệp</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    min-height: 50px;
+    background-color: aqua;
+}
+.container {
+    display: flex; /* Sử dụng Flexbox để đặt nav và div trên cùng một dòng */
+    justify-content: space-between; /* Điều chỉnh khoảng cách giữa các phần tử */
+    padding: 20px;
+}
+
+nav {
+    width: 20%; /* Đặt chiều rộng cho nav */
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: blue;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: red;
+}
+
+.cha {
+    position: relative;
+}
+
+.con {
+    position: absolute;
+    width: 250px;
+    left: 250px;
+    top: 0px;
+    display: none;
+}
+
+.cha:hover .con {
+    display: block;
+}
+
+div article, div aside {
+    width: 75%; /* Đặt chiều rộng cho phần nội dung div */
+    padding: 20px;
+}
+
+article, aside {
+    display: inline-block; /* Hiển thị cả article và aside trên cùng một dòng */
+}
+
+aside img {
+    width: 100px;
+    height: 100px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" class="logo">
+        <h1>Đại Học Công Nghiệp Hà Nội</h1>
+    </header>
+    <div class="container">
+    <nav>
+        <ul class="menu">
+            <li><a href="">Trang Chủ</a></li>
+            <li class="cha"><a href="">Học Trực Tiếp</a>
+                    <ul class="con">
+                        <li><a href="#">Học kết hợp</a></li>
+                        <li><a href="#">Học Trực Tuyến</a></li>
+                    </ul>
+            </li>
+            <li><a href="">Chương Trình</a></li>
+            <li><a href="">Tiện ích</a></li>
+            <li><a href="">Thông tin cá nhân</a></li>
+        </ul>
+    </nav>
+    <div>
+        <article>
+          <h2>Thông tin cá nhân</h2>
+          <ul>
+            <li>Hồ sơ </li>
+            <li>Mật Khẩu</li>
+            <li>Liên hệ</li>
+            <li>Ngân Hàng</li>
+          </ul>
+        </article>
+        <aside>
+           <img src="face.pgn" alt="face" class="face">
+        </aside>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT2 - Công ty TNHH TM DV Tú Mĩ</title>
+    <style>
+        /* Định dạng chung cho body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        #header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        #header img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        #header h1 {
+            margin: 0;
+        }
+
+        /* Menu điều hướng */
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            display: flex;
+        }
+
+        .menu > li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .menu > li > a:hover {
+            background-color: #555;
+        }
+
+        /* Sub-menu cấp 2 */
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 200px;
+            z-index: 1;
+        }
+
+        .menu li:hover > ul {
+            display: block;
+        }
+
+        .menu li ul li a {
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .menu li ul li a:hover {
+            background-color: #666;
+        }
+
+        /* Main content container */
+        .main-container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 30%;
+            border-right: 1px solid black;
+            padding-right: 20px;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Nội dung chính */
+        .content {
+            width: 70%;
+        }
+
+        .content img {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        /* Sản phẩm */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            width: 23%;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <img src="logo.jpg" alt="Ảnh cây cầu">
+        <h1>Công ty TNHH TM DV Tú Mĩ</h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="menu">
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+            <a href="#">Sản phẩm</a>
+            <ul>
+                <li><a href="#">Túi</a></li>
+                <li><a href="#">Trang sức</a></li>
+                <li><a href="#">Đồ gốm sứ mỹ nghệ</a></li>
+                <li><a href="#">Thổ cẩm</a></li>
+                <li><a href="#">Thời trang</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Sản phẩm</h2>
+            <ul>
+                <li>Túi</li>
+                <li>Trang sức</li>
+                <li>Đồ gốm sứ mĩ nghệ</li>
+                <li>Thổ cẩm</li>
+                <li>Thời trang</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <img src="BT2 (1).jpg" alt="Ảnh nền">
+
+            <!-- Products -->
+            <div class="products">
+                <div class="product-item">
+                    <img src="bag1.jpg" alt="Sản phẩm">
+                    <p>Mã sản phẩm</p>
+                    <p>Giá tiền/Số lượng</p>
+                </div>
+                <div class="product-item">
+                    <img src="bag1.jpg" alt="Sản phẩm">
+                    <p>Mã sản phẩm</p>
+                    <p>Giá tiền/Số lượng</p>
+                </div>
+                <div class="product-item">
+                    <img src="bag1.jpg" alt="Sản phẩm">
+                    <p>Mã sản phẩm</p>
+                    <p>Giá tiền/Số lượng</p>
+                </div>
+                <div class="product-item">
+                    <img src="bag1.jpg" alt="Sản phẩm">
+                    <p>Mã sản phẩm</p>
+                    <p>Giá tiền/Số lượng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
